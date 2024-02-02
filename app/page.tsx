@@ -1,14 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
+import Header from "./header";
 
 export default function Home() {
   return (
     <div className="h-full">
-      <div className="absolute w-full py-4 px-8 flex justify-between items-center">
-        <Link href="/">
-          <Image src="/logo.svg" alt="actionist logo" width={50} height={50} />
-        </Link>
-        <Link href="mailto:actionist.app@gmail.com">Contact</Link>
+      <div className="absolute w-full">
+        <Header />
       </div>
       <main className="h-full flex justify-center items-center">
         <div className="px-4">
