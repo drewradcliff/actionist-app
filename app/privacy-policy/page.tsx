@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <div>
       <Header />
-      <div className="mx-auto py-16 prose">
+      <div className="mx-auto py-16 prose px-8">
         <h1>Privacy Policy</h1>
         <p>
           This Privacy Policy outlines how Actionist handles your information
