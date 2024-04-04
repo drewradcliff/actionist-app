@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <div>
       <Header />
-      <div className="mx-auto py-52 prose px-8">
+      <div className="prose mx-auto px-8 py-52">
         <article className="prose mx-auto flex flex-col">
           <h1>Actionist, the doing app</h1>
           <figcaption>April 2, 2024</figcaption>
