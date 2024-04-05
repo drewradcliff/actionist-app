@@ -35,7 +35,7 @@ export default function Header({
       </div>
       {showNav && (
         <div className="flex h-screen w-screen flex-col items-center justify-center bg-white">
-          <div className="flex flex-col items-center space-y-8">
+          <div className="flex flex-col items-center space-y-8 text-xl">
             <Link href="/blog">Blog</Link>
             <Link href="/privacy-policy">Privacy Policy</Link>
             <a href="mailto:actionist.app@gmail.com">Contact</a>

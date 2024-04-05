@@ -1,11 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import Header from "../header";
+import { useState } from "react";
+import clsx from "clsx";
 
 export default function Blog() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div>
-      <Header />
-      <div className="prose mx-auto px-8 py-52">
+    <main className={clsx("w-full", isMenuOpen && "fixed")}>
+      <Header
+        onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}
+        showNav={isMenuOpen}
+      />
+      <div className="prose mx-auto px-8 py-32 sm:py-52">
         <article className="prose mx-auto flex flex-col">
           <h1>Actionist, the doing app</h1>
           <figcaption>April 2, 2024</figcaption>
@@ -118,6 +127,6 @@ export default function Blog() {
           </p>
         </article>
       </div>
-    </div>
+    </main>
   );
 }

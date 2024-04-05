@@ -1,10 +1,19 @@
+"use client";
+
+import clsx from "clsx";
 import Header from "../header";
+import { useState } from "react";
 
 export default function PrivacyPolicy() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div>
-      <Header />
-      <div className="mx-auto py-52 prose px-8">
+    <main className={clsx("w-full", isMenuOpen && "fixed")}>
+      <Header
+        onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}
+        showNav={isMenuOpen}
+      />
+      <div className="prose mx-auto px-8 py-32 sm:py-52">
         <h1>Privacy Policy</h1>
         <p>
           This Privacy Policy outlines how Actionist handles your information
@@ -48,6 +57,6 @@ export default function PrivacyPolicy() {
           <a href="mailto:actionist.app@gmail.com">actionist.app@gmail.com</a>.
         </p>
       </div>
-    </div>
+    </main>
   );
 }

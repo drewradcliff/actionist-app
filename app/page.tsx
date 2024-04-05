@@ -14,22 +14,22 @@ export default function Home() {
         onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}
         showNav={isMenuOpen}
       />
-      <div className="flex flex-col items-center space-y-4 py-64 text-center">
-        <Image src="/logo.svg" alt="qr code" width={300} height={300} />
+      <div className="flex flex-col items-center space-y-4 px-4 py-32 text-center sm:py-64">
+        <Image src="/logo.svg" alt="actionist logo" width={250} height={250} />
         <h1 className="text-6xl font-semibold tracking-tighter">Actionist</h1>
         <p className="text-2xl text-zinc-500">
           Stop organizing your todo apps, simply start doing.
         </p>
       </div>
-      <div className="flex flex-col items-center bg-gray-100 py-64">
-        <div className="flex items-center">
+      <div className="flex flex-col items-center bg-gray-100 px-4 py-32 sm:py-64">
+        <div className="flex flex-col items-center space-y-16 md:flex-row">
           <Image
             src="/iphone-screenshot.png"
             alt="iphone screenshot"
             width={400}
             height={400}
           />
-          <ul className="list-disc space-y-4 pl-24">
+          <ul className="list-disc space-y-4 pl-6 md:pl-24">
             <li className="text-2xl text-zinc-500">
               Designed for the easily distracted
             </li>
@@ -39,16 +39,20 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col items-center py-52">
+      <div className="flex flex-col items-center px-4 py-32 sm:py-52">
         <Image
           src="/activation.png"
           alt="activation energy chart"
-          width={800}
-          height={800}
+          width={700}
+          height={700}
         />
+        <p className="max-w-lg pt-16 text-xl text-zinc-500 sm:max-w-2xl sm:text-3xl">
+          Just as in chemistry, where energy is needed to initiate a reaction,
+          people often require a certain level of motivation to initiate change.
+        </p>
       </div>
-      <div className="flex flex-col items-center bg-gray-50 py-24">
-        <p className="max-w-lg pb-4 text-center text-2xl font-semibold uppercase tracking-widest">
+      <div className="flex flex-col items-center bg-gray-50 px-4 py-24">
+        <p className="text-md max-w-lg pb-4 text-center font-semibold uppercase tracking-widest sm:text-2xl">
           There is an inverse relationship between things on your mind and those
           things getting done.
         </p>
