@@ -85,8 +85,9 @@ export default function Blog() {
             more buttons?
           </p>
           <p>
-            Unfortunately, I have. Nope they don’t do it for me. I get lost
-            trying to get everything organized.
+            Unfortunately, I have. Nope they don’t do it for me. It is so 
+            attempting to start organizing and get distraught by -- as in, 
+            how could one actually organize all of them?
           </p>
           <h2>The intended usage of actionist</h2>
           <p>
@@ -109,7 +110,7 @@ export default function Blog() {
             height={300}
           />
           <p>
-            Alternatively, when a task is too big and too duanting, you are
+            Alternatively, when a task is too big and too duanting, you can
             start by breaking them down like so:
           </p>
           <Image
