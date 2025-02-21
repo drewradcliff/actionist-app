@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
         <p>
           If you have any questions or concerns regarding this Privacy Policy or
           the use of Actionist, please contact us at{" "}
-          <a href="mailto:actionist.app@gmail.com">actionist.app@gmail.com</a>.
+          <a href="mailto:support@actionist.app">support@actionist.app</a>.
         </p>
       </div>
     </main>

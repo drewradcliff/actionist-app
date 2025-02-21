@@ -59,7 +59,19 @@ export default function Home() {
         <p className="text-zinc-500">- David Allen</p>
       </div>
       <footer className="flex flex-col items-center justify-center space-y-8 py-12">
-        <Image alt="qr code" src="/qr-code.svg" width={150} height={150} />
+        <Image
+          onClick={() => {
+            window.open(
+              "https://apps.apple.com/us/app/actionist-a-doing-app/id6477123297",
+              "_blank",
+            );
+          }}
+          className="cursor-pointer"
+          alt="qr code"
+          src="/qr-code.svg"
+          width={150}
+          height={150}
+        />
         <p className="text-sm text-zinc-500">
           &copy; {new Date().getFullYear()} Actionist. All rights reserved.
         </p>

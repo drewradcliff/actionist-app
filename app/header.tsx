@@ -23,7 +23,7 @@ export default function Header({
         >
           <Link href="/blog">Blog</Link>
           <Link href="/privacy-policy">Privacy Policy</Link>
-          <a href="mailto:actionist.app@gmail.com">Contact</a>
+          <a href="mailto:support@actionist.app">Contact</a>
         </div>
         <button onClick={onClick} className={clsx(!showNav && "sm:hidden")}>
           {showNav ? (
@@ -38,7 +38,7 @@ export default function Header({
           <div className="flex flex-col items-center space-y-8 text-xl">
             <Link href="/blog">Blog</Link>
             <Link href="/privacy-policy">Privacy Policy</Link>
-            <a href="mailto:actionist.app@gmail.com">Contact</a>
+            <a href="mailto:support@actionist.app">Contact</a>
           </div>
         </div>
       )}
